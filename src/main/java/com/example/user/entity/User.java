@@ -1,9 +1,10 @@
 package com.example.user.entity;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
+public class User implements Serializable {
 
     private Long id;
     private String username;
@@ -71,6 +72,7 @@ public class User {
     public Date getCreateTime() {
         return createTime;
     }
+
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
